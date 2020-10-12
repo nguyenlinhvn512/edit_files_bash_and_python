@@ -1,0 +1,14 @@
+#!/bin/bash
+
+>oldFiles.txt
+
+files=$(grep "jane" 
+
+# /mnt/c/Users/Utilisateur/Documents/GitHub/edit_files_bash_and_python/list.txt  1-| cut -d "" -f 1-4)
+echo $files
+
+for file in $files;do
+if test -e $HOME$file; then
+echo $HOME$file>>oldFiles.txt
+fi
+done
